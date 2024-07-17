@@ -9,8 +9,10 @@ class SakuraLabLoginScreen:
 
     def setup_window(self):
         self.sk.title("Sakura Lab")
-        self.sk.geometry("800x600")
+        self.sk.geometry("1280x720")
         ctk.set_appearance_mode("dark")
+        #Icon Setup
+        self.sk.iconbitmap(r"E:\OneDrive\Vscode\Sakura-Lab\resources\images\sk_icon.ico")
         #Setup of the of the grid
         self.sk.columnconfigure(0, weight=3)
         self.sk.columnconfigure(1, weight=1)
@@ -24,9 +26,7 @@ class SakuraLabLoginScreen:
         #Image import
         image_path = r"E:\OneDrive\Vscode\Sakura-Lab\resources\images\sk_logo.png"
         image = Image.open(image_path)
-        #Icon Setup
         sk_logo = ctk.CTkImage(image, size=(300, 300))
-        self.sk.iconbitmap(r"E:\OneDrive\Vscode\Sakura-Lab\resources\images\sk_icon.ico")
         #Image position
         logo_label = ctk.CTkLabel(self.sk, image=sk_logo, text="")
         logo_label.grid(row=0, column=1, pady=10, sticky="s")
