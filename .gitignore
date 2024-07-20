@@ -163,3 +163,4 @@ cython_debug/
 Flow Chart.drawio
 resources/credentials.json
 token.json
+test.py

@@ -12,7 +12,7 @@ class TemplateWindow:
         self.sk.title("Sakura Lab")
         self.sk.geometry("1280x720")
         #Icon Setup
-        self.sk.iconbitmap(r"E:\OneDrive\Vscode\Sakura-Lab\resources\images\sk_icon.ico")
+        self.sk.iconbitmap(r"resources\images\sk_icon.ico")
         #Grid setup
         self.sk.columnconfigure(0, weight=1)
         self.sk.columnconfigure(1, weight=20)
@@ -22,17 +22,17 @@ class TemplateWindow:
 
     def create_widgets(self):
         #import logo
-        logo_path = r"E:\OneDrive\Vscode\Sakura-Lab\resources\images\sk_logo.png"
+        logo_path = r"resources\images\sk_logo.png"
         logo = Image.open(logo_path)
         self.sk_logo = ctk.CTkImage(logo, size=(45, 45))
 
         #import update icon
-        update_path = r"E:\OneDrive\Vscode\Sakura-Lab\resources\images\update_icon.png"
+        update_path = r"resources\images\update_icon.png"
         update_icon = Image.open(update_path)
         self.sk_update_icon = ctk.CTkImage(update_icon, size=(30, 30))
 
         #import folder icon
-        files_path = r"E:\OneDrive\Vscode\Sakura-Lab\resources\images\folder_icon.png"
+        files_path = r"resources\images\folder_icon.png"
         files_icon = Image.open(files_path)
         self.sk_files_icon = ctk.CTkImage(files_icon, size=(30, 30))
 
