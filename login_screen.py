@@ -4,16 +4,19 @@ from PIL import Image
 class LoginScreen:
     def __init__(self, sk, authenticate_func):
         self.sk = sk
-        self.setup_window()
+        self.login_setup_window()
         self.create_widgets()
+        self.setup_grid()
         self.authenticate_func = authenticate_func
 
-    def setup_window(self):
+    def login_setup_window(self):
         self.sk.title("Sakura Lab")
         self.sk.geometry("1280x720")
         ctk.set_appearance_mode("dark")
         #Icon Setup
         self.sk.iconbitmap(r"resources\images\sk_icon.ico")
+
+    def setup_grid(self):
         #Setup of the of the grid
         self.sk.columnconfigure(0, weight=3)
         self.sk.columnconfigure(1, weight=1)

@@ -164,3 +164,5 @@ Flow Chart.drawio
 resources/credentials.json
 token.json
 test.py
+monolito.py
+template_window.py

@@ -7,7 +7,7 @@ from google.oauth2.credentials import Credentials
 load_dotenv()
 
 class GoogleAuthenticator:
-    SCOPES = ['https://www.googleapis.com/auth/drive.file']
+    SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
 
     def __init__(self, credentials_path_env_var='GOOGLE_CREDENTIALS_PATH', token_file='token.json'):
         self.credentials_path = os.getenv(credentials_path_env_var)
